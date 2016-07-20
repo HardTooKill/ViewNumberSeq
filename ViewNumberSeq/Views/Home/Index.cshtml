@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@model ViewNumberSeq.Models.Number
+<div class="jumbotron">
+    <h1>Numeric Sequence Calculator</h1>
+    <p class="lead">
+        This page is used to populate numeric squence by user input.
+
+    </p>
+</div>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            @Html.Label("Please input a number", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.number)
+                @Html.ValidationMessageFor(model => model.number)
+            </div>
+            
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Submit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    <h4>Numeric Sequnces</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            All Numbers
+        </dt>
+        <dd>
+            @Html.DisplayFor(m=>m.AllNumberstring)
+        </dd>
+        <dt>
+            Odd Numbers
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OddNumberstring)
+        </dd>
+        <dt>
+            Even Numbers
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EvenNumberstring)
+        </dd>
+        <dt>
+            Special Numbers
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SpecialNumberstring)
+        </dd>
+        <dt>
+            Fibonacci Numbers
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FibonacciNumberstring)
+        </dd>
+    </dl>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewNumberSeq", "ViewNumberSeq\ViewNumberSeq.csproj", "{F1CF3942-131B-4FF0-BDB5-3EEC89702E61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewSeqTest", "ViewSeqTest\ViewSeqTest.csproj", "{DA4BA43A-77E0-4E98-AE23-DEA5F99B6D94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1CF3942-131B-4FF0-BDB5-3EEC89702E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CF3942-131B-4FF0-BDB5-3EEC89702E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CF3942-131B-4FF0-BDB5-3EEC89702E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CF3942-131B-4FF0-BDB5-3EEC89702E61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4BA43A-77E0-4E98-AE23-DEA5F99B6D94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4BA43A-77E0-4E98-AE23-DEA5F99B6D94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4BA43A-77E0-4E98-AE23-DEA5F99B6D94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4BA43A-77E0-4E98-AE23-DEA5F99B6D94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
